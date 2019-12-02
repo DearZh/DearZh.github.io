@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://loveyue4.bigeone.cn/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<link rel="apple-touch-icon-precomposed" href="http://loveyue4.bigeone.cn/jscss/1.png">
+<meta name="format-detection" content="telephone=no">
+<script src="./love4_files/hm.js.下载"></script><script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?49c9e828e38545414078413b222513c4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+<title>我喜欢你</title>
+<style type="text/css">
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	font-size: 25px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	background: #f3961c;
+}
+
+div {
+	text-align: left;
+}
+
+.tittle {
+	width: 100%;
+	background: #f3961c;
+	top: 0px;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+	position: fixed !important;
+	display: none;
+	cursor: default;
+}
+
+.big {
+	font-family: "微软雅黑";
+	color: #FFF;
+	font-size: 35px;
+}
+
+.tishi {
+	position: absolute;
+	position: fixed !important;
+	z-index: 99;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.tishiContent {
+	border: 1px solid #FFF;
+	font-size: 18px;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+</style>
+<script type="text/javascript" src="./love4_files/jquery.min.js.下载"></script>
+<script>
+// if(localStorage["index"]=="1"){
+// 	window.location="index2.html";
+// }
+
+$(document).ready(function(e) {
+	$(document).scrollTop(300); /*移动滚动条到最下方*/
+	timer=setInterval("$.change()",6000);
+	t=1;
+	$("#t-"+t).fadeIn();
+	
+	$(document).click(
+	function(){
+		/*如果用户点击了，就取消自动播放*/
+		clearInterval(timer);
+		$.change();
+		}
+	);
+	
+	/*切换*/
+	$.change=function(){
+		t++;
+		if(t<=$(".tittle").length){
+		$(".tittle").slideUp(1500).fadeOut();
+		$("#t-"+t).slideDown(1500).fadeIn();
+		}else{
+			// localStorage["index"]="1";
+			// window.location="index2.html";
+			}
+		}
+});
+</script>	
+</head>
+<body>
+<!-- <div id="ShowAD" style="position: absolute; z-index: 100; top: 122px; left: 15px;">
+<div style="width:150px;height:18px;font-size:14px;font-weight:bold;text-align:center;CURSOR: hand;" onclick="closead();"><font color="ff0000">关闭</font></div>
+<a href="https://github.com/DearZh/love" target="_blank" title="title" onclick="closead();">
+<img border="0" alt="alt" src="./love4_files/bg.png" style="width: 150px;height: 203px"></a>
+</div> -->
+<script>
+    var bodyfrm = ( document.compatMode.toLowerCase()=="css1compat" ) ? document.documentElement : document.body;
+    var adst = document.getElementById("ShowAD").style;
+    adst.top = ( bodyfrm.clientHeight -530-22 ) + "px";
+    adst.left =  "15px";
+    function moveR() {
+        adst.top = ( bodyfrm.scrollTop + bodyfrm.clientHeight - 530-22) + "px";
+        adst.left ="15px";
+    }
+    setInterval("moveR();", 400);
+    function closead()
+    {
+        adst.display='none';
+    }
+</script>
+<center>
+<div class="tittle" id="t-1" style="display: none;">
+<table width="100%" border="0" height="100%">
+<tbody><tr>
+<td align="center"> <span class="big">表白系统</span>正在初始化</td>
+</tr>
+</tbody></table>
+</div>
+<div class="tittle" id="t-2" style="display: block;">
+<table width="100%" border="0" height="100%">
+<tbody><tr>
+<td align="center"><span class="big">在这个特殊的</span>地方</td>
+</tr>
+</tbody></table>
+</div>
+<div class="tittle" id="t-3" style="">
+<table width="100%" border="0" height="100%">
+<tbody><tr>
+<td align="center">我想对<span class="big">某人说</span></td>
+</tr>
+</tbody></table>
+</div>
+</center>
+<div class="tittle" id="t-4" style="">
+<table width="100%" border="0" height="100%">
+<tbody><tr>
+<td align="center"><br><span其实我 class="big">暗恋你很久了</span其实我></td>
+</tr>
+</tbody></table>
+</div>
+<div class="tittle" id="t-5" style="">
+<table width="100%" border="0" height="100%">
+<tbody><tr>
+<td align="center"><br>下面是我对你的<span class="big">表白内容</span></td>
+</tr>
+</tbody></table>
+</div>
+<div align="center" class="tishi">
+<span class="tishiContent">轻触屏幕继续</span>
+</div>
+<div style="position: static; display: none; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-arrow-top.png&quot;);"></div></div><audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
